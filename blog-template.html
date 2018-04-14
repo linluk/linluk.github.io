@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <meta name="author" content="Lukas Singer (linluk)">
     <title>linluk - $subtitle$</title>
-    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+      code{white-space: pre;}
+      nav ul{list-style-type: none; margin: 0; padding: 0; }
+      nav ul li a{display: block}
+      nav ul li{background-color: #333}
+      nav ul li.selected{background-color: #1C1}
+    </style>
   </head>
   <body>
     <header>
-      <h1> UNDER CONSTRUCTION !! </h1>
     </header>
     <nav>
       <ul>
         <li $if(nav-home)$class="selected"$endif$><a href="index.html">HOME</a></li>
-        <li $if(nav-blog)$class="selected"$endif$><a href="blog.html">BLOG</a></li>
+        <li $if(nav-blog)$class="selected"$endif$>BLOG</li>
         <li $if(nav-about)$class="selected"$endif$><a href="about.html">ABOUT</a></li>
       </ul>
     </nav>

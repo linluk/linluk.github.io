@@ -21,20 +21,23 @@ BLOG-TEMPLATE=blog-template.html
 
 PANDOC-FLAGS=--from=markdown --to=html5 --template $(TEMPLATE) --smart --email-obfuscation=javascript
 
-blog:
-	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-blog=1 --output $(WWW-DIR)/blog/metagamejam2018-lessons-learned.html  blog/metagamejam2018-lessons-learned.md
 
-default: blog
+default: build
+
+
+blog:
+	mkdir -p $(WWW-DIR)/blog
+	$(PANDOC) $(PANDOC-FLAGS) --template $(BLOG-TEMPLATE) --output $(WWW-DIR)/blog/metagamejam2018-lessons-learned.html  blog/metagamejam2018-lessons-learned.md
+
+build: blog
 	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-home=1 --output $(WWW-DIR)/index.html  index.md
 	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-about=1 --output $(WWW-DIR)/about.html  about.md
 	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-blog=1 --output $(WWW-DIR)/blog.html  blog.md
 
-
-serve:
+serve: build
 	( \
 	  cd $(WWW-DIR) ; \
 	  python3 -m http.server 8080 --bind 127.0.0.1 ; \
-	  xdg-open http://127.0.0.1:8080/index.html ; \
 	)
 
 init:
@@ -56,4 +59,6 @@ publish:
 
 clean:
 	rm -rf $(WWW-DIR)
+
+.PHONY: blog build serve init publish clean
 
