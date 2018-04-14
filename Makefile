@@ -39,11 +39,12 @@ serve:
 
 init:
 	( \
-	  if [ ! -d "$(WWW-DIR)" ]; then ; \
+	  if [ ! -d "$(WWW-DIR)" ]; then ( \
 	    git clone $(REMOTE) $(WWW-DIR) ; \
 	    cd $(WWW-DIR) ; \
-	    git checkout $(WWW-BRANCH) ; \
+	    git checkout $(WWW-BRANCH) ; ) ; \
 	  fi ; \
+	)
 
 publish:
 	( \
