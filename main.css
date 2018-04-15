@@ -1,11 +1,15 @@
 body {
   color: #fff;
-  background-color: #353;
+  background-color: #223;
   padding: 0;
 }
 header {
   background-color: #333;
   width: 100%;
+}
+header div {
+  padding-left: 15px;
+  padding-top: 10px;
 }
 footer {
   background-color: #333;
@@ -56,6 +60,9 @@ footer ul li a {
 }
 a {
   color: #0a0;
+}
+img {
+  max-width: 100%;
 }
 @media screen and (max-width: 600px) {
   header nav ul {

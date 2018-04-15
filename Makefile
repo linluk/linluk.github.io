@@ -35,7 +35,7 @@ build: blog
 	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-about=1 --output $(WWW-DIR)/about.html  about.md
 	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-blog=1 --output $(WWW-DIR)/blog.html  blog.md
 	cp -f $(CSS-FILE) $(WWW-DIR)/$(CSS-FILE)
-	cp -rf $(IMAGE-DIR) $(WWW-DIR)/$(IMAGE-DIR)
+	cp -rf $(IMAGE-DIR) $(WWW-DIR)/
 
 serve: build
 	( \
