@@ -17,7 +17,8 @@ WWW-BRANCH=master
 SOURCE-BRANCH=source
 
 TEMPLATE=template.html
-BLOG-TEMPLATE=blog-template.html
+CSS-FILE=main.css
+IMAGE-DIR=images
 
 PANDOC-FLAGS=--from=markdown --to=html5 --template $(TEMPLATE) --smart --email-obfuscation=javascript
 
@@ -27,12 +28,14 @@ default: build
 
 blog:
 	mkdir -p $(WWW-DIR)/blog
-	$(PANDOC) $(PANDOC-FLAGS) --template $(BLOG-TEMPLATE) --output $(WWW-DIR)/blog/metagamejam2018-lessons-learned.html  blog/metagamejam2018-lessons-learned.md
+	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-blog=1 --output $(WWW-DIR)/blog/metagamejam2018.html  blog/metagamejam2018.md
 
 build: blog
 	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-home=1 --output $(WWW-DIR)/index.html  index.md
 	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-about=1 --output $(WWW-DIR)/about.html  about.md
 	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-blog=1 --output $(WWW-DIR)/blog.html  blog.md
+	cp -f $(CSS-FILE) $(WWW-DIR)/$(CSS-FILE)
+	cp -rf $(IMAGE-DIR) $(WWW-DIR)/$(IMAGE-DIR)
 
 serve: build
 	( \
