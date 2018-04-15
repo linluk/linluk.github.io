@@ -5,19 +5,18 @@
     <meta name="generator" content="pandoc" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <meta name="author" content="Lukas Singer (linluk)" />
-    <title>linluk - $subtitle$</title>
-    <link rel="stylesheet" href="main.css" type="text/css" />
+    <title>linluk</title>
+    <link rel="stylesheet" href="$if(is-blog)$../$endif$main.css" type="text/css" />
   </head>
   <body>
     <header>
       <h1>linluk</h1>
-      <h2>$subtitle$</h2>
       <h3>software, linux and more</h3>
       <nav>
         <ul>
-          <li $if(nav-home)$class="selected"$endif$><a href="index.html">HOME</a></li>
-          <li $if(nav-blog)$class="selected"$endif$><a href="blog.html">BLOG</a></li>
-          <li $if(nav-about)$class="selected"$endif$><a href="about.html">ABOUT</a></li>
+          <li $if(nav-home)$class="selected"$endif$><a href="$if(is-blog)$../$endif$index.html">HOME</a></li>
+          <li $if(nav-blog)$class="selected"$endif$><a href="$if(is-blog)$../$endif$blog.html">BLOG</a></li>
+          <li $if(nav-about)$class="selected"$endif$><a href="$if(is-blog)$../$endif$about.html">ABOUT</a></li>
         </ul>
       </nav>
     </header>
@@ -26,7 +25,7 @@ $body$
       <ul>
         <li>&copy; 2018 Lukas Singer</li>
         <li><a href="https://github.com/linluk/linluk.github.io">source code</a></li>
-        <li>powered by <a href="https://github.com"><img src="images/github.png" alt="GitHub" /></a></li>
+        <li>powered by <a href="https://github.com"><img src="$if(is-blog)$../$endif$images/github.png" alt="GitHub" /></a></li>
       </ul>
     </footer>
   </body>
