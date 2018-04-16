@@ -1,16 +1,13 @@
 ---
-date: 2018-04-16
+blog-date: 2018-04-16
+blog-title: Meta Game Jam 2018
+disqus-page-url: http://linluk.github.io/blog/metagamejam2018
+disqus-page-identifier: linluk.github.io/blog/metagamejam2018
 ---
 
-Meta Game Jam 2018
-==================
 
-<center>
-DRAFT DRAFT DRAFT DRAFT DRAFT
-=============================
-</center>
-
-Just a note: this is my first blog post about my first (published) game.
+*This is my first blog post about my first (published) game,
+developed for the MetaGameJam.*
 
 
 What is the MetaGameJam?
@@ -92,18 +89,42 @@ screen and a nice (but hopefully never seen by anyone) bug report screen.
 
 On the last day we had a more or less finished game. But we made one big
 mistake! **We had never tried it on Windows!** (We both use linux on our
-personal computers). As you might guess are some differences between windows
+personal computers). As you might guess there are some differences between windows
 and liunx. We had to find out how [pyinstaller](https://www.pyinstaller.org/) (a
 great tool btw!) works on windows. We had to set up older linux systems with 32
 and 64 bit, we had to test everything, we had to learn how to upload to itch.io,
 we had to ... and everything in the last few hours. I felt really really
 stressed.
 
+But we finally did it. We released our first game ever. Party!
+
+Other MetaGameJam games
+-----------------------
+
+After the deadline (2018-03-31) the entries were open for rating. I have tried
+some titles and want to share my top 3 with you.
+
+ - [A very meta platformer puzzle game](https://yscik.itch.io/escape-sequence)
+ - [A great action platformer](https://securas.itch.io/daisy)
+ - [A DOS-Prompt based dungeon (file system) game](https://nmorris0x1.itch.io/x)
+
+There are lots of other really great games. I was totally overwhelmed when I saw
+what games were created by small teams in just two weeks. It is definitely worth
+to give them a try, so visit the [MetaGameJam entries
+page](https://itch.io/jam/metagamejam/entries). Or watch one of the great Let's
+Plays, for example [this mega
+series](https://www.youtube.com/playlist?list=PLETOema7_oN3HIH73tD9itqW3_48MHcJi)
 
 
+c-0-d-3-r
+---------
 
+If you are interested in our game. Its called *coder* btw. you can download
+linux versions for 32 and 64 bit and a windows version here:
 
+<center><iframe frameborder="0" src="https://itch.io/embed/240381?linkback=true&amp;bg_color=333&amp;fg_color=fff" width="552" height="167"></iframe></center>
 
+Have fun :-)
 
 
 

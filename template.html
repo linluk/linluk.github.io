@@ -22,7 +22,31 @@
         </ul>
       </nav>
     </header>
+    <div class="content">
+$if(is-blog)$
+      <h1 class="blog-title">$blog-title$</h1>
+      <p class="blog-date">$blog-date$</p>
+$endif$
+      <div class="main">
 $body$
+      </div>
+$if(is-blog)$
+      <div class="disqus-thread" id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = "$disqus-page-url$";
+          this.page.identifier = "$disqus-page-identifier$";
+        };
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://linluk.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+$endif$
+    </div>
     <footer>
       <ul>
         <li>&copy; 2018 Lukas Singer</li>

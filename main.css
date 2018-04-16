@@ -1,11 +1,20 @@
 body {
   color: #fff;
   background-color: #223;
-  padding: 0;
+}
+p.blog-date {
+  color: #ccc;
+  text-align: right;
+}
+h1.blog-title {
+  text-align: center;
 }
 header {
   background-color: #333;
-  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
 }
 header div {
   padding-left: 15px;
@@ -13,7 +22,19 @@ header div {
 }
 footer {
   background-color: #333;
-  width: 100%;
+  max-width: 800px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.content {
+  background-color: #444;
+  padding-top: 10px;
+  max-width: 800px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 code {
   white-space: pre;
@@ -45,7 +66,8 @@ header nav ul li.selected {
 }
 footer ul {
   list-style-type: none;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   overflow: hidden;
 }
