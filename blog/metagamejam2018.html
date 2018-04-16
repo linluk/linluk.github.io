@@ -10,8 +10,10 @@
   </head>
   <body>
     <header>
-      <h1>linluk</h1>
-      <h3>software, linux and more</h3>
+      <div>
+        <h1>linluk</h1>
+        <h3>software, linux and more</h3>
+      </div>
       <nav>
         <ul>
           <li ><a href="../index.html">HOME</a></li>
@@ -20,8 +22,84 @@
         </ul>
       </nav>
     </header>
-<h1 id="meta-game-jam-2018">Meta Game Jam 2018</h1>
-<p>The Meta Game Jam …</p>
+    <div class="content">
+      <h1 class="blog-title">Meta Game Jam 2018</h1>
+      <p class="blog-date">2018-04-16</p>
+      <div class="main">
+<p><em>This is my first blog post about my first (published) game, developed for the MetaGameJam.</em></p>
+<h2 id="what-is-the-metagamejam">What is the MetaGameJam?</h2>
+<p>The <a href="https://twitter.com/hashtag/MetaGameJam">#MetaGameJam</a> is a coding challenge on <a href="https://itch.io/">itch.io</a> hosted by <a href="https://xavierekkel.itch.io/">Xavier Ekkel</a>. The participants had two weeks (from 2018-03-17 to 2018-03-31) to develop a meta game. A meta game as defined by Xavier for the MetaGameJam is a game about games or more specific a game that:</p>
+<ul>
+<li>comment on / deconstruct / parody / satire game design, game mechanics, games development, or game culture; and/or</li>
+<li>heavily feature the use of meta-references (such as breaking the fourth-wall) or other metafiction elements; and/or</li>
+<li>provide a level of abstraction above an existing ‘game’ (e.g. gamification, ARGs, analysing opponents/strategies in esports)</li>
+</ul>
+<h2 id="my-metagamejam-story">My MetaGameJam Story</h2>
+<p>My friend <a href="https://github.com/Nimmda">Daniel Nimmervoll</a> created an <a href="https://thinkdownstairs.itch.io/">itch.io account</a> for us and told me, that he has signed us up for the MetaGameJam! My first reaction was like “wow, good idea, lets do it!” my second reaction was more like “wtf, how should we handle that?”.</p>
+<p>My starting conditions for the jam were far from perfect because my girlfriend was about to leave here flat and move to mine in exactly those two weeks. In my experience relocating is a lot of work and time consuming. Beside that I had a stressful time at my day job.</p>
+<p>Spoiler: Everything turned out to be handleable. Relocation was really relaxed and day job was ok.</p>
+<p>We started our work on the game jam with a short brainstorming. We quickly came up with the main idea: a two axis arcade game (’cause that seemed doable for us; we have never published a game before!). We wanted to make it a browser game, but neither me nor Daniel had experience with html+js. We tried it anyways … for about 15 minutes. After that 15 minutes of desperate javascript googling, copying and pasting we decided to stick with <a href="https://www.python.org/">python</a> and <a href="https://www.pygame.org/docs/">pygame</a>, and don’t do a browser game. A windows and of course linux version must be enough.</p>
+<center>
+<img src="../images/metagamejam2018/coder-sketch.png" alt="First sketch" /> <br/><small>First sketch of our game “coder”</small>
+</center>
+<p>Then we started with development. From scratch. Daniel started with a prototype of the main game mechanics and I started with some animations. I am not an artist, I am not a drawer, I am a programmer. I do not like drawing very much, especially on the computer. To be more precise: I try to avoid using my mouse whenever possible :-)</p>
+<p>But we made good progress in the first few days of the jam. I learned a lot about the pygame sound system, how to use <a href="https://www.gimp.org/">gimp</a> and <a href="https://www.audacityteam.org/">audacity</a> and we had a lot of fun discussing features of the game.</p>
+<center>
+<img src="../images/metagamejam2018/first-screenshot.png" alt="First screenshot" /> <br/><small>First screenshot of our game “coder”</small>
+</center>
+<p>After one week we had a more or less playable game but there were still lot of missing features.</p>
+<p>Having a playable game is dangerous! You have to be very strict with yourself to not play but to develop your game.</p>
+<p>In the second week we did a lot of balancing and added a bunch of features like a menu, a highscore screen, a select-your-editor-dialog, splash screens, credits screen and a nice (but hopefully never seen by anyone) bug report screen.</p>
+<center>
+<img src="../images/metagamejam2018/second-screenshot.png" alt="Second screenshot" style="max-width: 49%;" /> <img src="../images/metagamejam2018/third-screenshot.png" alt="Third screenshot" style="max-width: 49%;" /> <br/><small>More screenshots of our game “coder”</small>
+</center>
+<p>On the last day we had a more or less finished game. But we made one big mistake! <strong>We had never build or tried it on Windows!</strong> (We both use linux on our personal computers). As you might guess there are some differences between windows and liunx. We had to find out how <a href="https://www.pyinstaller.org/">pyinstaller</a> (a great tool btw!) works on windows. We had to set up older linux systems with 32 and 64 bit, we had to test everything, we had to learn how to upload to itch.io, we had to … and everything in the last few hours. I felt really really stressed.</p>
+<p>But we finally did it. We released our first game ever. Let’s Party!</p>
+<h2 id="c-0-d-3-r-our-metagamejam-game">c-0-d-3-r our MetaGameJam game</h2>
+<p>If you are interested in our game. Its called <em>coder</em> btw. you can download linux versions for 32 bit and 64 bit and a windows version here:</p>
+<center>
+<iframe frameborder="0" src="https://itch.io/embed/240381?linkback=true&amp;bg_color=333&amp;fg_color=fff" width="552" height="167">
+</iframe>
+</center>
+<h2 id="other-metagamejam-games">Other MetaGameJam games</h2>
+<p>I have tried lots of other MetaGameJam titles and want to share my top 3 with you.</p>
+<ul>
+<li><a href="https://yscik.itch.io/escape-sequence">A very meta platformer puzzle game</a></li>
+<li><a href="https://securas.itch.io/daisy">An awesome action platformer</a></li>
+<li><a href="https://nmorris0x1.itch.io/x">A DOS prompt based dungeon (file system) game</a></li>
+</ul>
+<p>There are lots of other really great games. I was totally overwhelmed when I saw what games were created by small teams in just two weeks. It is definitely worth to give them a try, so visit the <a href="https://itch.io/jam/metagamejam/entries">MetaGameJam entries page</a>. Or watch one of the great Let’s Plays, for example <a href="https://www.youtube.com/playlist?list=PLETOema7_oN3HIH73tD9itqW3_48MHcJi">this mega series</a>.</p>
+<h2 id="lessons-learned">Lessons Learned</h2>
+<p>My first released game and everything went surprisingly good but there is still one major lessons learned:</p>
+<center>
+<strong>Build early, build often, build automatically. For all platforms!</strong>
+</center>
+<h2 id="conclusion">Conclusion</h2>
+<p>It was a really great experience and a lot of fun.</p>
+<p>We developed a simple fun game and released it.</p>
+<p>Some people downloaded our game and gave us quite good feedback, which is a great feeling.</p>
+<p>The participants (at least those I had contact via twitter or comments) were really friendly and respectful and gave good feedback.</p>
+<center>
+<em>Have fun</em> :-)
+</center>
+<p><br/></p>
+      </div>
+      <hr/>
+      <div class="disqus-thread" id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = "http://linluk.github.io/blog/metagamejam2018";
+          this.page.identifier = "linluk.github.io/blog/metagamejam2018";
+        };
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://linluk.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
     <footer>
       <ul>
         <li>&copy; 2018 Lukas Singer</li>
