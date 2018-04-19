@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <meta name="author" content="Lukas Singer (linluk)" />
     <title>linluk</title>
-    <link rel="stylesheet" href="../main.css" type="text/css" />
+    <link rel="stylesheet" href="../css/main.css" type="text/css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117736512-1"></script>
@@ -17,6 +17,12 @@
       }
       gtag('js', new Date());
       gtag('config', 'UA-117736512-1');
+    </script>
+
+    <script src="../js/docready.js"></script>
+    <script src="../js/cookie-hint.js"></script>
+    <script>
+      docReady(function () { cookieHint("../legal.html#cookies"); })
     </script>
   </head>
   <body>
@@ -109,13 +115,22 @@
           (d.head || d.body).appendChild(s);
         })();
       </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <noscript>Please enable JavaScript to view the comments powered by <a href="https://disqus.com/?ref_noscript">Disqus</a>.</noscript>
     </div>
     <footer>
       <ul>
         <li>&copy; 2018 Lukas Singer</li>
         <li><a href="https://github.com/linluk/linluk.github.io">source code</a></li>
         <li>powered by <a href="https://github.com"><img src="../images/github.png" alt="GitHub" /></a></li>
+        <li>
+          licensed under
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            <img alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License"
+                 style="border-width:0"
+                 src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+          </a>
+        </li>
+        <li><a href="../legal.html">legal notice</a></li>
       </ul>
     </footer>
   </body>
