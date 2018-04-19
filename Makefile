@@ -17,7 +17,8 @@ WWW-BRANCH=master
 SOURCE-BRANCH=source
 
 TEMPLATE=template.html
-CSS-FILE=main.css
+CSS-DIR=css
+JS-DIR=js
 IMAGE-DIR=images
 
 PANDOC-FLAGS=--from=markdown --to=html5 --template $(TEMPLATE) --smart --email-obfuscation=javascript
@@ -34,7 +35,9 @@ build: blog
 	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-home=1 --output $(WWW-DIR)/index.html  index.md
 	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-about=1 --output $(WWW-DIR)/about.html  about.md
 	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-blog=1 --output $(WWW-DIR)/blog.html  blog.md
-	cp -f $(CSS-FILE) $(WWW-DIR)/$(CSS-FILE)
+	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --output $(WWW-DIR)/legal.html  legal.md
+	cp -rf $(CSS-DIR) $(WWW-DIR)/
+	cp -rf $(JS-DIR) $(WWW-DIR)/
 	cp -rf $(IMAGE-DIR) $(WWW-DIR)/
 
 serve: build
