@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <meta name="author" content="Lukas Singer (linluk)" />
     <title>linluk</title>
-    <link rel="stylesheet" href="../css/main.css" type="text/css" />
+
+    <!-- Generated Icons - https://realfavicongenerator.net -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#223">
+    <meta name="theme-color" content="#223">
+
+    <link rel="stylesheet" href="/css/main.css" type="text/css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117736512-1"></script>
@@ -19,23 +29,24 @@
       gtag('config', 'UA-117736512-1');
     </script>
 
-    <script src="../js/docready.js"></script>
-    <script src="../js/cookie-hint.js"></script>
+    <script src="/js/docready.js"></script>
+    <script src="/js/cookie-hint.js"></script>
     <script>
-      docReady(function () { cookieHint("../legal.html#cookies"); })
+      docReady(function () { cookieHint("/legal.html#cookies"); })
     </script>
   </head>
   <body>
     <header>
       <div>
         <h1>linluk</h1>
+        <img src="/images/muscleman.png" alt="My Profile Picture" />
         <h3>software, linux and more</h3>
       </div>
       <nav>
         <ul>
-          <li ><a href="../index.html">HOME</a></li>
-          <li class="selected"><a href="../blog.html">BLOG</a></li>
-          <li ><a href="../about.html">ABOUT</a></li>
+          <li ><a href="/index.html">HOME</a></li>
+          <li class="selected"><a href="/blog.html">BLOG</a></li>
+          <li ><a href="/about.html">ABOUT</a></li>
         </ul>
       </nav>
     </header>
@@ -57,18 +68,18 @@
 <p>Spoiler: Everything turned out to be handleable. Relocation was really relaxed and day job was ok.</p>
 <p>We started our work on the game jam with a short brainstorming. We quickly came up with the main idea: a two axis arcade game (’cause that seemed doable for us; we have never published a game before!). We wanted to make it a browser game, but neither me nor Daniel had experience with html+js. We tried it anyways … for about 15 minutes. After that 15 minutes of desperate javascript googling, copying and pasting we decided to stick with <a href="https://www.python.org/">python</a> and <a href="https://www.pygame.org/docs/">pygame</a>, and don’t do a browser game. A windows and of course linux version must be enough.</p>
 <center>
-<img src="../images/metagamejam2018/coder-sketch.png" alt="First sketch" /> <br/><small>First sketch of our game “coder”</small>
+<img src="/images/metagamejam2018/coder-sketch.png" alt="First sketch" /> <br/><small>First sketch of our game “coder”</small>
 </center>
 <p>Then we started with development. From scratch. Daniel started with a prototype of the main game mechanics and I started with some animations. I am not an artist, I am not a drawer, I am a programmer. I do not like drawing very much, especially on the computer. To be more precise: I try to avoid using my mouse whenever possible :-)</p>
 <p>But we made good progress in the first few days of the jam. I learned a lot about the pygame sound system, how to use <a href="https://www.gimp.org/">gimp</a> and <a href="https://www.audacityteam.org/">audacity</a> and we had a lot of fun discussing features of the game.</p>
 <center>
-<img src="../images/metagamejam2018/first-screenshot.png" alt="First screenshot" /> <br/><small>First screenshot of our game “coder”</small>
+<img src="/images/metagamejam2018/first-screenshot.png" alt="First screenshot" /> <br/><small>First screenshot of our game “coder”</small>
 </center>
 <p>After one week we had a more or less playable game but there were still lot of missing features.</p>
 <p>Having a playable game is dangerous! You have to be very strict with yourself to not play but to develop your game.</p>
 <p>In the second week we did a lot of balancing and added a bunch of features like a menu, a highscore screen, a select-your-editor-dialog, splash screens, credits screen and a nice (but hopefully never seen by anyone) bug report screen.</p>
 <center>
-<img src="../images/metagamejam2018/second-screenshot.png" alt="Second screenshot" style="max-width: 49%;" /> <img src="../images/metagamejam2018/third-screenshot.png" alt="Third screenshot" style="max-width: 49%;" /> <br/><small>More screenshots of our game “coder”</small>
+<img src="/images/metagamejam2018/second-screenshot.png" alt="Second screenshot" style="max-width: 49%;" /> <img src="/images/metagamejam2018/third-screenshot.png" alt="Third screenshot" style="max-width: 49%;" /> <br/><small>More screenshots of our game “coder”</small>
 </center>
 <p>On the last day we had a more or less finished game. But we made one big mistake! <strong>We had never build or tried it on Windows!</strong> (We both use linux on our personal computers). As you might guess there are some differences between windows and liunx. We had to find out how <a href="https://www.pyinstaller.org/">pyinstaller</a> (a great tool btw!) works on windows. We had to set up older linux systems with 32 and 64 bit, we had to test everything, we had to learn how to upload to itch.io, we had to … and everything in the last few hours. I felt really really stressed.</p>
 <p>But we finally did it. We released our first game ever. Let’s Party!</p>
@@ -121,7 +132,7 @@
       <ul>
         <li>&copy; 2018 Lukas Singer</li>
         <li><a href="https://github.com/linluk/linluk.github.io">source code</a></li>
-        <li>powered by <a href="https://github.com"><img src="../images/github.png" alt="GitHub" /></a></li>
+        <li>powered by <a href="https://github.com"><img src="/images/github.png" alt="GitHub" /></a></li>
         <li>
           licensed under
           <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
@@ -130,7 +141,7 @@
                  src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
           </a>
         </li>
-        <li><a href="../legal.html">legal notice</a></li>
+        <li><a href="/legal.html">legal notice</a></li>
       </ul>
     </footer>
   </body>

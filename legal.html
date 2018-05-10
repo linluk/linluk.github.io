@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <meta name="author" content="Lukas Singer (linluk)" />
     <title>linluk</title>
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
+
+    <!-- Generated Icons - https://realfavicongenerator.net -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#223">
+    <meta name="theme-color" content="#223">
+
+    <link rel="stylesheet" href="/css/main.css" type="text/css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117736512-1"></script>
@@ -19,23 +29,24 @@
       gtag('config', 'UA-117736512-1');
     </script>
 
-    <script src="js/docready.js"></script>
-    <script src="js/cookie-hint.js"></script>
+    <script src="/js/docready.js"></script>
+    <script src="/js/cookie-hint.js"></script>
     <script>
-      docReady(function () { cookieHint("legal.html#cookies"); })
+      docReady(function () { cookieHint("/legal.html#cookies"); })
     </script>
   </head>
   <body>
     <header>
       <div>
         <h1>linluk</h1>
+        <img src="/images/muscleman.png" alt="My Profile Picture" />
         <h3>software, linux and more</h3>
       </div>
       <nav>
         <ul>
-          <li ><a href="index.html">HOME</a></li>
-          <li ><a href="blog.html">BLOG</a></li>
-          <li ><a href="about.html">ABOUT</a></li>
+          <li ><a href="/index.html">HOME</a></li>
+          <li ><a href="/blog.html">BLOG</a></li>
+          <li ><a href="/about.html">ABOUT</a></li>
         </ul>
       </nav>
     </header>
@@ -80,7 +91,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
       <ul>
         <li>&copy; 2018 Lukas Singer</li>
         <li><a href="https://github.com/linluk/linluk.github.io">source code</a></li>
-        <li>powered by <a href="https://github.com"><img src="images/github.png" alt="GitHub" /></a></li>
+        <li>powered by <a href="https://github.com"><img src="/images/github.png" alt="GitHub" /></a></li>
         <li>
           licensed under
           <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
@@ -89,7 +100,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
                  src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
           </a>
         </li>
-        <li><a href="legal.html">legal notice</a></li>
+        <li><a href="/legal.html">legal notice</a></li>
       </ul>
     </footer>
   </body>
