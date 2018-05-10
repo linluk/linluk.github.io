@@ -51,7 +51,7 @@ copying and pasting we decided to stick with
 and don't do a browser game. A windows and of course linux version must be enough.
 
 <center>
-![First sketch](../images/metagamejam2018/coder-sketch.png)
+![First sketch](/images/metagamejam2018/coder-sketch.png)
 <br/><small>First sketch of our game "coder"</small>
 </center>
 
@@ -67,7 +67,7 @@ about the pygame sound system, how to use [gimp](https://www.gimp.org/) and
 features of the game.
 
 <center>
-![First screenshot](../images/metagamejam2018/first-screenshot.png)
+![First screenshot](/images/metagamejam2018/first-screenshot.png)
 <br/><small>First screenshot of our game "coder"</small>
 </center>
 
@@ -82,8 +82,8 @@ a menu, a highscore screen, a select-your-editor-dialog, splash screens, credits
 screen and a nice (but hopefully never seen by anyone) bug report screen.
 
 <center>
-![Second screenshot](../images/metagamejam2018/second-screenshot.png){style="max-width: 49%;"}
-![Third screenshot](../images/metagamejam2018/third-screenshot.png){style="max-width: 49%;"}
+![Second screenshot](/images/metagamejam2018/second-screenshot.png){style="max-width: 49%;"}
+![Third screenshot](/images/metagamejam2018/third-screenshot.png){style="max-width: 49%;"}
 <br/><small>More screenshots of our game "coder"</small>
 </center>
 

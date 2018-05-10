@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <meta name="author" content="Lukas Singer (linluk)" />
     <title>linluk</title>
-    <link rel="stylesheet" href="$if(is-blog)$../$endif$css/main.css" type="text/css" />
+    <link rel="stylesheet" href="/css/main.css" type="text/css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117736512-1"></script>
@@ -19,10 +19,10 @@
       gtag('config', 'UA-117736512-1');
     </script>
 
-    <script src="$if(is-blog)$../$endif$js/docready.js"></script>
-    <script src="$if(is-blog)$../$endif$js/cookie-hint.js"></script>
+    <script src="/js/docready.js"></script>
+    <script src="/js/cookie-hint.js"></script>
     <script>
-      docReady(function () { cookieHint("$if(is-blog)$../$endif$legal.html#cookies"); })
+      docReady(function () { cookieHint("/legal.html#cookies"); })
     </script>
   </head>
   <body>
@@ -30,12 +30,13 @@
       <div>
         <h1>linluk</h1>
         <h3>software, linux and more</h3>
+        <img src="/images/profile.png" alt="My Profile Picture" />
       </div>
       <nav>
         <ul>
-          <li $if(nav-home)$class="selected"$endif$><a href="$if(is-blog)$../$endif$index.html">HOME</a></li>
-          <li $if(nav-blog)$class="selected"$endif$><a href="$if(is-blog)$../$endif$blog.html">BLOG</a></li>
-          <li $if(nav-about)$class="selected"$endif$><a href="$if(is-blog)$../$endif$about.html">ABOUT</a></li>
+          <li $if(nav-home)$class="selected"$endif$><a href="/index.html">HOME</a></li>
+          <li $if(nav-blog)$class="selected"$endif$><a href="/blog.html">BLOG</a></li>
+          <li $if(nav-about)$class="selected"$endif$><a href="/about.html">ABOUT</a></li>
         </ul>
       </nav>
     </header>
@@ -69,7 +70,7 @@ $endif$
       <ul>
         <li>&copy; 2018 Lukas Singer</li>
         <li><a href="https://github.com/linluk/linluk.github.io">source code</a></li>
-        <li>powered by <a href="https://github.com"><img src="$if(is-blog)$../$endif$images/github.png" alt="GitHub" /></a></li>
+        <li>powered by <a href="https://github.com"><img src="/images/github.png" alt="GitHub" /></a></li>
         <li>
           licensed under
           <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
@@ -78,7 +79,7 @@ $endif$
                  src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
           </a>
         </li>
-        <li><a href="$if(is-blog)$../$endif$legal.html">legal notice</a></li>
+        <li><a href="/legal.html">legal notice</a></li>
       </ul>
     </footer>
   </body>
