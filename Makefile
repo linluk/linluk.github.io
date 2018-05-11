@@ -30,6 +30,7 @@ default: build
 blog:
 	mkdir -p $(WWW-DIR)/blog
 	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-blog=1 --variable is-blog=1 --output $(WWW-DIR)/blog/metagamejam2018.html  blog/metagamejam2018.md
+	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-blog=1 --variable is-blog=1 --output $(WWW-DIR)/blog/github-security.html  blog/github-security.md
 
 build: blog
 	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-home=1 --output $(WWW-DIR)/index.html  index.md
