@@ -1,6 +1,12 @@
 ---
 blog-date: 2018-04-16
 blog-title: Meta Game Jam 2018
+keywords:
+- metagame
+- itch.io
+- coder
+- coding
+- challenge
 disqus-page-url: http://linluk.github.io/blog/metagamejam2018
 disqus-page-identifier: linluk.github.io/blog/metagamejam2018
 ---
