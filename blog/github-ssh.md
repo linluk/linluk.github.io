@@ -123,7 +123,7 @@ You can also update the remote url of an existing repository to its ssh link
 using this `git remote set-url`. For example with the command:
 
 ```
- $ git remote set-url git@github.com:linluk/my-dot-files.git
+ $ git remote set-url origin git@github.com:linluk/my-dot-files.git
 ```
 
 When pushing git will prompt for your passphrase and authenticate with your
