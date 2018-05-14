@@ -11,7 +11,7 @@ PANDOC=pandoc
 
 WWW-DIR=www
 
-REMOTE=https://github.com/linluk/linluk.github.io.git
+REMOTE=git@github.com:linluk/linluk.github.io.git
 
 WWW-BRANCH=master
 SOURCE-BRANCH=source
@@ -30,7 +30,7 @@ default: build
 blog:
 	mkdir -p $(WWW-DIR)/blog
 	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-blog=1 --variable is-blog=1 --output $(WWW-DIR)/blog/metagamejam2018.html  blog/metagamejam2018.md
-	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-blog=1 --variable is-blog=1 --output $(WWW-DIR)/blog/github-security.html  blog/github-security.md
+	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-blog=1 --variable is-blog=1 --output $(WWW-DIR)/blog/github-ssh.html  blog/github-ssh.md
 
 build: blog
 	$(PANDOC) $(PANDOC-FLAGS) --template $(TEMPLATE) --variable nav-home=1 --output $(WWW-DIR)/index.html  index.md
