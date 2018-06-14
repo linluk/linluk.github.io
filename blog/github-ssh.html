@@ -59,7 +59,8 @@
     <div class="content">
       <h1 class="blog-title">GitHub via SSH</h1>
       <p class="blog-date">2018-05-14</p>
-      <div class="main">
+        <p class="blog-changelog">2018-06-14: restore .ssh folder, fix access rights</p>
+        <div class="main">
 <p><em>Due to the latest security issues at github I wanted to change my password but don’t wanted to retrain my muscle memory to remember a new password. I switched from username/password to ssh key authentication when using git via command line. This blog post is about setting up ssh keys for github.</em></p>
 <h2 id="motivation-and-goal">Motivation and Goal</h2>
 <p>I was lazy, too lazy to learn how to use <a href="https://github.com/">GitHub</a> with <a href="https://en.wikipedia.org/wiki/Secure_Shell">SSH key</a> based authentication. And I was to lazy to update my muscle memory of my GitHub password every now and then. When pushed to a repository I have always entered my password manually.</p>
@@ -113,7 +114,8 @@ Connection to github.com closed.</code></pre>
 <center>
 <em>Have fun</em> :-)
 </center>
-<p><br/></p>
+<p><strong>2018-06-14 Edit:</strong> I just set up a fresh ubuntu system and restored my <code>~/.ssh</code> directory. But it didn’t worked for me, after one minute googeeling I found out, that the <code>~/.ssh</code> directory should have <code>700</code> rights and the containing files should have <code>600</code> rights. after fixing that (via a simple <code>chmod</code> everything worked as expected.</p>
+      <br/>
       <br/>
       </div>
       <hr/>
