@@ -62,9 +62,13 @@ $endif$
 $if(is-blog)$
       <h1 class="blog-title">$blog-title$</h1>
       <p class="blog-date">$blog-date$</p>
+  $for(changes)$
+      <p class="blog-changelog">$changes$</p>
+  $endfor$
 $endif$
       <div class="main">
 $body$
+      <br/>
       <br/>
       </div>
 $if(is-blog)$
