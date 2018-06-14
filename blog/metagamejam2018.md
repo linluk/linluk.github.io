@@ -159,6 +159,5 @@ really friendly and respectful and gave good feedback.
 <center>
 *Have fun* :-)
 </center>
-<br/>
 
 
