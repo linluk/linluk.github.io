@@ -7,6 +7,8 @@ keywords:
 - authentication
 - password
 - passphrase
+changes:
+- "2018-06-14: restore .ssh folder, fix access rights"
 disqus-page-url: http://linluk.github.io/blog/github-ssh
 disqus-page-identifier: linluk.github.io/blog/github-ssh
 ---
@@ -144,6 +146,12 @@ command line.
 <center>
 *Have fun* :-)
 </center>
-<br/>
+
+
+**2018-06-14 Edit:** I just set up a fresh ubuntu system and restored my `~/.ssh`
+directory. But it didn't worked for me, after one minute googeeling I found out,
+that the `~/.ssh` directory should have `700` rights and the containing files
+should have `600` rights. after fixing that (via a simple `chmod` everything
+worked as expected.
 
 
